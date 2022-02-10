@@ -1,10 +1,26 @@
 import React from "react";
+import { VscCode } from "react-icons/vsc";
 import styled from "styled-components";
 
 function Projects() {
     return (
         <StyledProjectPage>
             <Heading>Projects</Heading>
+            <Title>A list of my projects, both current and past.</Title>
+            <Title>
+                <ListImage />{" "}
+                <StyledLink href="https://github.com/zacattack08/Unknown_Bot">
+                    UnknownBot
+                </StyledLink>{" "}
+                The best bot for your discord server!
+            </Title>
+            <Title>
+                <ListImage />{" "}
+                <StyledLink href="htpps://unknownuniverse.me">
+                    UnknownUniverse Website
+                </StyledLink>{" "}
+                My personal webstite.
+            </Title>
         </StyledProjectPage>
     );
 }
@@ -41,7 +57,7 @@ const Title = styled.h1`
     color: #fff;
     font-weight: 700;
     margin: 0;
-    padding: 100px;
+    padding: 50px;
 
     user-select: none;
     -webkit-user-select: none;
@@ -63,3 +79,9 @@ const Text = styled.p`
     -moz-user-select: none;
     -ms-user-select: none;
 `;
+
+const StyledLink = styled.a`
+    color: #aaa;
+`;
+
+const ListImage = styled(VscCode)``;

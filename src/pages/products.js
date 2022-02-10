@@ -5,6 +5,7 @@ function Products() {
     return (
         <StyledProducsPage>
             <Heading>Products</Heading>
+            <Title>Where you can find my current products.</Title>
         </StyledProducsPage>
     );
 }
@@ -62,4 +63,8 @@ const Text = styled.p`
     -khtml-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
+`;
+
+const StyledLink = styled.a`
+    color: #aaa;
 `;
