@@ -24,10 +24,38 @@ const StyledProducsPage = styled.div`
 
 const Heading = styled.h1`
     font-size: clamp(3rem, 5vw, 7vw);
-    color: #eee;
+    color: #ba34eb;
     font-weight: 700;
     margin: 0;
-    padding: 0;
+    padding: 100px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+`;
+
+const Title = styled.h1`
+    font-size: clamp(3rem, 2vw, 5vw);
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 100px;
+
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+`;
+
+const Text = styled.p`
+    font-size: clamp(2rem, 1vw, 3vw);
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 100px;
 
     user-select: none;
     -webkit-user-select: none;

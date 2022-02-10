@@ -42,9 +42,9 @@ const StyledMenu = styled.div`
     height: 100vh;
     width: 100%;
     @media screen and (min-width: 790px) {
-        width: 60%;
+        width: 40%;
     }
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: #4f5663;
     z-index: 99;
 
     display: flex;
@@ -88,7 +88,7 @@ const Github = styled(FaGithub)`
 const Linkedin = styled(FaLinkedin)`
     position: fixed;
     bottom: 5%;
-    right: 10%;
+    right: 8%;
     background: #222;
     color: #fff;
     padding: 0.75rem;
@@ -101,7 +101,7 @@ const Linkedin = styled(FaLinkedin)`
 const Freelancer = styled(SiFreelancer)`
     position: fixed;
     bottom: 5%;
-    right: 16%;
+    right: 12%;
     background: #222;
     color: #fff;
     padding: 0.75rem;
