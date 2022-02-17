@@ -13,7 +13,7 @@ function Home() {
             </Title>
             <Text>
                 My name is Zackary S., I am a freelancer JavaScript/TypeScript
-                developer who other things along those lines.
+                developer who does other things along those lines.
             </Text>
         </StyledHomePage>
     );
@@ -25,8 +25,6 @@ const StyledHomePage = styled.div`
     min-height: 100vh;
     width: 100vw;
     background-color: #282c34;
-    background-repeat: no-repeat;
-    background-position: center;
 
     display: flex;
     flex-direction: column;
@@ -38,8 +36,7 @@ const Heading = styled.h1`
     font-size: clamp(3rem, 5vw, 7vw);
     color: #ba34eb;
     font-weight: 700;
-    margin: 0;
-    padding: 100px;
+    margin: 100;
 
     user-select: none;
     -webkit-user-select: none;
@@ -52,8 +49,7 @@ const Title = styled.h1`
     font-size: clamp(3rem, 2vw, 5vw);
     color: #fff;
     font-weight: 700;
-    margin: 0;
-    padding: 100px;
+    margin: 100px;
 
     user-select: none;
     -webkit-user-select: none;
@@ -66,8 +62,7 @@ const Text = styled.p`
     font-size: clamp(2rem, 1vw, 3vw);
     color: #fff;
     font-weight: 700;
-    margin: 0;
-    padding: 100px;
+    margin: 100px;
 
     user-select: none;
     -webkit-user-select: none;

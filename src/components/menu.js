@@ -7,10 +7,18 @@ import styled from "styled-components";
 const Menu = ({ handleNavToggle }) => {
     return (
         <StyledMenu>
-            <StyledLink to="/">Home</StyledLink>
-            <StyledLink to="/info">Information</StyledLink>
-            <StyledLink to="/products">Products</StyledLink>
-            <StyledLink to="/projects">Projects</StyledLink>
+            <StyledLink to="/" onClick={handleNavToggle}>
+                Home
+            </StyledLink>
+            <StyledLink to="/info" onClick={handleNavToggle}>
+                Information
+            </StyledLink>
+            <StyledLink to="/products" onClick={handleNavToggle}>
+                Products
+            </StyledLink>
+            <StyledLink to="/projects" onClick={handleNavToggle}>
+                Projects
+            </StyledLink>
             <CloseToggle onClick={handleNavToggle} />
             <Github
                 onClick={() => {

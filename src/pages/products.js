@@ -27,8 +27,7 @@ const Heading = styled.h1`
     font-size: clamp(3rem, 5vw, 7vw);
     color: #ba34eb;
     font-weight: 700;
-    margin: 0;
-    padding: 100px;
+    margin: 100px;
 
     user-select: none;
     -webkit-user-select: none;
@@ -41,8 +40,7 @@ const Title = styled.h1`
     font-size: clamp(3rem, 2vw, 5vw);
     color: #fff;
     font-weight: 700;
-    margin: 0;
-    padding: 100px;
+    margin: 100px;
 
     user-select: none;
     -webkit-user-select: none;
@@ -55,8 +53,7 @@ const Text = styled.p`
     font-size: clamp(2rem, 1vw, 3vw);
     color: #fff;
     font-weight: 700;
-    margin: 0;
-    padding: 100px;
+    margin: 100px;
 
     user-select: none;
     -webkit-user-select: none;
