@@ -30,7 +30,7 @@ function Projects() {
             </Title>
             <Title>
                 <ListImage /> {" "}
-                <StyledLink href="htpps://unknownuniverse.me/beyond-unknown">
+                <StyledLink href="https://unknownuniverse.me/beyond-unknown">
                     BeyondUnknown
                 </StyledLink> {" "}
                 A open-world, sandbox, space-based, factory building game
