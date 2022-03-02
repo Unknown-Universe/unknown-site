@@ -19,6 +19,9 @@ const Menu = ({ handleNavToggle }) => {
             <StyledLink to="/projects" onClick={handleNavToggle}>
                 Projects
             </StyledLink>
+            <StyledLink to="/beyond-unknown" onClick={handleNavToggle}>
+                Beyond Unknown
+            </StyledLink>
             <CloseToggle onClick={handleNavToggle} />
             <Github
                 onClick={() => {

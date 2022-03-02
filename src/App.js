@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Menu from "./components/menu";
 import Toggle from "./components/toggle";
+import BeyondUnknown from "./pages/beyondUnknown";
 import Home from "./pages/home";
 import Info from "./pages/information";
 import Products from "./pages/products";
@@ -54,6 +55,11 @@ function App() {
                             </>
                         }
                     />
+                    <Route path="/beyond-unknown" element={
+                        <>
+                            <BeyondUnknown />
+                        </>
+                    } />
                 </Routes>
             </BrowserRouter>
         </div>
