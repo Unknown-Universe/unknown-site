@@ -20,7 +20,7 @@ function App() {
         <div className="App">
             <Toggle handleNavToggle={handleNavToggle} />
             <BrowserRouter>
-                {navToggled ? <Menu handleNavToggle={handleNavToggle} /> : null}
+                <Menu handleNavToggle={handleNavToggle} toggled={navToggled} key={navToggled} />
                 <Routes>
                     <Route
                         exact

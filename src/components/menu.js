@@ -2,11 +2,11 @@ import React from "react";
 import { FaGithub, FaLinkedin, FaTimes } from "react-icons/fa";
 import { SiFreelancer } from "react-icons/si";
 import { Link } from "react-router-dom";
-import styled from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
-const Menu = ({ handleNavToggle }) => {
+const Menu = ({ handleNavToggle, toggled}) => {
     return (
-        <StyledMenu>
+        <StyledMenu toggled={toggled}>
             <StyledLink to="/" onClick={handleNavToggle}>
                 Home
             </StyledLink>
@@ -25,7 +25,7 @@ const Menu = ({ handleNavToggle }) => {
             <CloseToggle onClick={handleNavToggle} />
             <Github
                 onClick={() => {
-                    window.location.href = "https://github.com/zacattack08";
+                    window.location.href = "https://github.com/unknown-universe";
                 }}
             />
             <Linkedin
@@ -46,6 +46,23 @@ const Menu = ({ handleNavToggle }) => {
 
 export default Menu;
 
+const fadein = keyframes`
+from {
+    opacity: 0;
+}
+to {
+    opacity: 1;
+}
+`
+
+const fadeout = keyframes`
+from {
+    opacity: 1;
+}
+to {
+    opacity: 0;
+}
+`
 const StyledMenu = styled.div`
     position: fixed;
     top: 0;
@@ -58,10 +75,15 @@ const StyledMenu = styled.div`
     background-color: #4f5663;
     z-index: 99;
 
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    opacity: 0;
+    ${props => props.toggled ? css`animation: ${fadein} 0.3s; opacity: 1` : css`animation: ${fadeout} 0.3s;`}
+
+    
 `;
 
 const StyledLink = styled(Link)`
