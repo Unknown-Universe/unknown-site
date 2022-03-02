@@ -12,9 +12,7 @@ function Info() {
             <Text>
                 You can find my work either{" "}
                 <StyledLink href="/projects">on this page</StyledLink> or on{" "}
-                <StyledLink href="https://github.com/unknown-universe">
-                    Github
-                </StyledLink>
+                <StyledLink href="https://github.com/unknown-universe">Github</StyledLink>
                 .
             </Text>
         </StyledPage>
